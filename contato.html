@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VIVA</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/contato.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+  <header>
+    <div class="logo">VIVA</div>
+    <div class="menu-icon" onclick="toggleMenu()">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+     <nav class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="home.html">Início</a></li>
+      <li><a href="guias.html">Guias</a></li>
+    
+    </ul>    
+</header>
+
+
+
+<!-- ********** main -->
+  <main>
+    <section id="contato" class="contact container">
+      <h2 class="section-title">Fale Conosco</h2>
+      <p class="section-subtitle">
+        Estamos prontos para ajudar! Preencha o formulário abaixo e nossa equipe entrará em contato rapidamente.
+      </p>
+
+      <form id="contact-form" onsubmit="validarContato(event)" novalidate>
+        <div class="form-group">
+          <label for="nome">Nome completo</label>
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            placeholder="Seu nome"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="seu.email@exemplo.com"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="motivo">Motivo do contato</label>
+          <select id="motivo" name="motivo" required>
+            <option value="">Selecione...</option>
+            <option value="problemas_acesso">Problemas no acesso</option>
+            <option value="alteracao_cadastro">Alteração de cadastro</option>
+            <option value="reagendamento">Reagendamento</option>
+            <option value="cancelamento">Cancelamento</option>
+            <option value="exclusao_dados">Solicitação de exclusão de dados pessoais</option>
+            <option value="reclamacao">Reclamação</option>
+            <option value="elogio">Elogio</option>
+            <option value="duvida">Dúvida</option>
+            <option value="outros">Outros</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="mensagem">Mensagem (opcional)</label>
+          <textarea
+            id="mensagem"
+            name="mensagem"
+            rows="4"
+            placeholder="Descreva aqui detalhes adicionais..."
+          ></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+      </form>
+    </section>
+  </main>
+
+
+<footer class="footer-verde">
+    <p>VIVA</p>
+    <nav>
+      <a href="contato.html">Contato</a> <a href="integrantes.html">Integrantes</a> <a href="faq.html">FAQ</a>
+    </nav>
+  </footer>
+  <script src="js/script.js"></script>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

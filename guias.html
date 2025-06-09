@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VIVA</title>
+  <link rel="stylesheet" href="css/guias.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+</head>
+<body>
+
+<header style="
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  background: #000 !important;
+  padding: 10px 20px !important;
+  position: fixed !important;
+  top: 0 !important;
+  width: 100% !important;
+  z-index: 1000 !important;
+">
+  <div class="logo" style="
+    color: #fff !important;
+    font-size: 1.5rem !important;
+  ">
+    VIVA
+  </div>
+
+  <!-- Menu for desktop & mobile forced to show inline -->
+  <nav id="mobileMenu" class="mobile-menu open" style="
+    display: flex !important;
+    flex-direction: row !important;
+    position: static !important;
+    transform: none !important;
+    background: transparent !important;
+  ">
+    <ul style="
+      display: flex !important;
+      list-style: none !important;
+      gap: 2rem !important;
+      margin: 0 !important;
+      padding: 0 !important;
+    ">
+      <li><a href="home.html" style="color: #fff !important; text-decoration: none !important;">Início</a></li>
+      <li><a href="guias.html" style="color: #fff !important; text-decoration: none !important;">Guias</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hamburger icon (still here for mobile toggling) -->
+  <div class="menu-icon" onclick="toggleMenu()" style="
+    display: none; /* hide by default, your media-queries can override */
+  ">
+    <div style="background: #3C6AA6; height: 4px; margin: 4px 0;"></div>
+    <div style="background: #3C6AA6; height: 4px; margin: 4px 0;"></div>
+    <div style="background: #3C6AA6; height: 4px; margin: 4px 0;"></div>
+  </div>
+</header>
+
+    
+  
+  </header>
+  <main class="pagina-guias" >
+  <h1><br><br>Guias para sobreviver<br>em catástrofes ambientais</h1>
+
+  <section class="cards">
+    <div class="card">
+      <h2>Tempestades</h2>
+      <p>Saiba como se proteger durante fortes chuvas, raios e ventos intensos.</p>
+      <a href="tempestade.html">Saiba mais</a>
+    </div>
+
+    <div class="card">
+      <h2>Terremotos</h2>
+      <p>Entenda o que fazer antes, durante e após um tremor de terra.</p>
+      <a href="terremoto.html">Saiba mais</a>
+    </div>
+
+    <div class="card">
+      <h2>Furacões</h2>
+      <p>Dicas essenciais para preparar sua casa e sua família para furacões.</p>
+      <a href="furacoes.html">Saiba mais</a>
+    </div>
+
+    <div class="card">
+      <h2>Tsunamis</h2>
+      <p>Aprenda como identificar sinais e agir rapidamente em áreas costeiras.</p>
+      <a href="tsunamis.html">Saiba mais</a>
+    </div>
+
+    <div class="card">
+      <h2>Inundações</h2>
+      <p>Veja como evitar riscos e agir com segurança durante enchentes.</p>
+      <a href="inundacao.html">Saiba mais</a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer-verde">
+    <p>VIVA</p>
+    <nav>
+      <a href="contato.html">Contato</a> <a href="integrantes.html">Integrantes</a> <a href="faq.html">FAQ</a>
+    </nav>
+  </footer>
+</body>
+</html>
+
+</body>
